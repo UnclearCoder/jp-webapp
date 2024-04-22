@@ -45,7 +45,7 @@ services:
     networks:
       - timescale_network
     depends_on:
-      db:
+      database:
         condition: service_healthy
 
 networks:
