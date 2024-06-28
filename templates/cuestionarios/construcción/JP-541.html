@@ -457,6 +457,7 @@
 			let lineCounter_1 = 1;
 
         function addNewLine_1() {
+					if(lineCounter_1 <= 9) {
             lineCounter_1++;
             const table = document.getElementById("projectsTable_1");
             const newRow = document.createElement("tr");
@@ -475,11 +476,13 @@
             `;
 
             table.appendChild(newRow);
+					}
         }
 
 				let lineCounter_2 = 1;
 
         function addNewLine_2() {
+					if(lineCounter_2 <= 9) {
             lineCounter_2++;
             const table = document.getElementById("projectsTable_2");
             const newRow = document.createElement("tr");
@@ -498,11 +501,13 @@
             `;
 
             table.appendChild(newRow);
+					}
         }
 
 				let lineCounter_3 = 1;
 
         function addNewLine_3() {
+					if(lineCounter_3 <= 9) {
             lineCounter_3++;
             const table = document.getElementById("projectsTable_3");
             const newRow = document.createElement("tr");
@@ -521,11 +526,13 @@
             `;
 
             table.appendChild(newRow);
+					}
         }
 
 				let lineCounter_4 = 1;
 
         function addNewLine_4() {
+					if(lineCounter_4 <= 9) {
             lineCounter_4++;
             const table = document.getElementById("projectsTable_4");
             const newRow = document.createElement("tr");
@@ -544,6 +551,7 @@
             `;
 
             table.appendChild(newRow);
+					}
         }
 	</script>
 	</body>
