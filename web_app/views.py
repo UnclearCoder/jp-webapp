@@ -809,8 +809,8 @@ def JP_541(request):
         # Retrieve form data
         
         #TABLE 1
-        form_1 = request.POST.get('form_1')
-        fiscal_year_1 = request.POST.get('fiscal_year_1')
+        encuesta_1 = request.POST.get('encuesta_1')
+        trimestre_1 = request.POST.get('trimestre_1')
         company_name_1 = request.POST.get('company_name_1')
         liaison_officer_1 = request.POST.get('liaison_officer_1')
         tel_1 = request.POST.get('tel_1')
@@ -874,8 +874,8 @@ def JP_541(request):
         
         
         #TABLE 2
-        form_2 = request.POST.get('form_2')
-        fiscal_year_2 = request.POST.get('fiscal_year_2')
+        encuesta_2 = request.POST.get('encuesta_2')
+        trimestre_2 = request.POST.get('trimestre_2')
         company_name_2 = request.POST.get('company_name_2')
         liaison_officer_2 = request.POST.get('liaison_officer_2')
         tel_2 = request.POST.get('tel_2')
@@ -939,8 +939,8 @@ def JP_541(request):
         
         
         #TABLE 3
-        form_3 = request.POST.get('form_3')
-        fiscal_year_3 = request.POST.get('fiscal_year_3')
+        encuesta_3 = request.POST.get('encuesta_3')
+        trimestre_3 = request.POST.get('trimestre_3')
         company_name_3 = request.POST.get('company_name_3')
         liaison_officer_3 = request.POST.get('liaison_officer_3')
         tel_3 = request.POST.get('tel_3')
@@ -1004,8 +1004,8 @@ def JP_541(request):
         
         
         #TABLE 4
-        form_4 = request.POST.get('form_4')
-        fiscal_year_4 = request.POST.get('fiscal_year_4')
+        encuesta_4 = request.POST.get('encuesta_4')
+        trimestre_4 = request.POST.get('trimestre_4')
         company_name_4 = request.POST.get('company_name_4')
         liaison_officer_4 = request.POST.get('liaison_officer_4')
         tel_4 = request.POST.get('tel_4')
@@ -1076,28 +1076,28 @@ def JP_541(request):
             
             if not file_exists:
                 writer.writerow([   
-                                    'form_1', 'fiscal_year_1', 'company_name_1', 'liaison_officer_1', 'tel_1', 'project_1', 'branches_1',
+                                    'encuesta_1', 'trimestre_1', 'company_name_1', 'liaison_officer_1', 'tel_1', 'project_1', 'branches_1',
                                     'project_name_1_1', 'city_1_1', 'total_number_project_1_1', 'total_cost_1_1', 'start_date_1_1', 'end_date_1_1', 'value_first_trimester_1_1', 'value_second_trimester_1_1', 'value_third_trimester_1_1', 'value_fourth_trimester_1_1',
                                     'project_name_1_2', 'city_1_2', 'total_number_project_1_2', 'total_cost_1_2', 'start_date_1_2', 'end_date_1_2', 'value_first_trimester_1_2', 'value_second_trimester_1_2', 'value_third_trimester_1_2', 'value_fourth_trimester_1_2',
                                     'project_name_1_3', 'city_1_3', 'total_number_project_1_3', 'total_cost_1_3', 'start_date_1_3', 'end_date_1_3', 'value_first_trimester_1_3', 'value_second_trimester_1_3', 'value_third_trimester_1_3', 'value_fourth_trimester_1_3',
                                     'project_name_1_4', 'city_1_4', 'total_number_project_1_4', 'total_cost_1_4', 'start_date_1_4', 'end_date_1_4', 'value_first_trimester_1_4', 'value_second_trimester_1_4', 'value_third_trimester_1_4', 'value_fourth_trimester_1_4',
                                     'project_name_1_5', 'city_1_5', 'total_number_project_1_5', 'total_cost_1_5', 'start_date_1_5', 'end_date_1_5', 'value_first_trimester_1_5', 'value_second_trimester_1_5', 'value_third_trimester_1_5', 'value_fourth_trimester_1_5',
                                     
-                                    'form_2', 'fiscal_year_2', 'company_name_2', 'liaison_officer_2', 'tel_2', 'project_2', 'branches_2',
+                                    'encuesta_2', 'trimestre_2', 'company_name_2', 'liaison_officer_2', 'tel_2', 'project_2', 'branches_2',
                                     'project_name_2_1', 'city_2_1', 'total_number_project_2_1', 'total_cost_2_1', 'start_date_2_1', 'end_date_2_1', 'value_first_trimester_2_1', 'value_second_trimester_2_1', 'value_third_trimester_2_1', 'value_fourth_trimester_2_1',
                                     'project_name_2_2', 'city_2_2', 'total_number_project_2_2', 'total_cost_2_2', 'start_date_2_2', 'end_date_2_2', 'value_first_trimester_2_2', 'value_second_trimester_2_2', 'value_third_trimester_2_2', 'value_fourth_trimester_2_2',
                                     'project_name_2_3', 'city_2_3', 'total_number_project_2_3', 'total_cost_2_3', 'start_date_2_3', 'end_date_2_3', 'value_first_trimester_2_3', 'value_second_trimester_2_3', 'value_third_trimester_2_3', 'value_fourth_trimester_2_3',
                                     'project_name_2_4', 'city_2_4', 'total_number_project_2_4', 'total_cost_2_4', 'start_date_2_4', 'end_date_2_4', 'value_first_trimester_2_4', 'value_second_trimester_2_4', 'value_third_trimester_2_4', 'value_fourth_trimester_2_4',
                                     'project_name_2_5', 'city_2_5', 'total_number_project_2_5', 'total_cost_2_5', 'start_date_2_5', 'end_date_2_5', 'value_first_trimester_2_5', 'value_second_trimester_2_5', 'value_third_trimester_2_5', 'value_fourth_trimester_2_5',
                                     
-                                    'form_3', 'fiscal_year_3', 'company_name_3', 'liaison_officer_3', 'tel_3', 'project_3', 'branches_3',
+                                    'encuesta_3', 'trimestre_3', 'company_name_3', 'liaison_officer_3', 'tel_3', 'project_3', 'branches_3',
                                     'project_name_3_1', 'city_3_1', 'total_number_project_3_1', 'total_cost_3_1', 'start_date_3_1', 'end_date_3_1', 'value_first_trimester_3_1', 'value_second_trimester_3_1', 'value_third_trimester_3_1', 'value_fourth_trimester_3_1',
                                     'project_name_3_2', 'city_3_2', 'total_number_project_3_2', 'total_cost_3_2', 'start_date_3_2', 'end_date_3_2', 'value_first_trimester_3_2', 'value_second_trimester_3_2', 'value_third_trimester_3_2', 'value_fourth_trimester_3_2',
                                     'project_name_3_3', 'city_3_3', 'total_number_project_3_3', 'total_cost_3_3', 'start_date_3_3', 'end_date_3_3', 'value_first_trimester_3_3', 'value_second_trimester_3_3', 'value_third_trimester_3_3', 'value_fourth_trimester_3_3',
                                     'project_name_3_4', 'city_3_4', 'total_number_project_3_4', 'total_cost_3_4', 'start_date_3_4', 'end_date_3_4', 'value_first_trimester_3_4', 'value_second_trimester_3_4', 'value_third_trimester_3_4', 'value_fourth_trimester_3_4',
                                     'project_name_3_5', 'city_3_5', 'total_number_project_3_5', 'total_cost_3_5', 'start_date_3_5', 'end_date_3_5', 'value_first_trimester_3_5', 'value_second_trimester_3_5', 'value_third_trimester_3_5', 'value_fourth_trimester_3_5',
                                     
-                                    'form_4', 'fiscal_year_4', 'company_name_4', 'liaison_officer_4', 'tel_4', 'project_4', 'branches_4',
+                                    'encuesta_4', 'trimestre_4', 'company_name_4', 'liaison_officer_4', 'tel_4', 'project_4', 'branches_4',
                                     'project_name_4_1', 'city_4_1', 'total_number_project_4_1', 'total_cost_4_1', 'start_date_4_1', 'end_date_4_1', 'value_first_trimester_4_1', 'value_second_trimester_4_1', 'value_third_trimester_4_1', 'value_fourth_trimester_4_1',
                                     'project_name_4_2', 'city_4_2', 'total_number_project_4_2', 'total_cost_4_2', 'start_date_4_2', 'end_date_4_2', 'value_first_trimester_4_2', 'value_second_trimester_4_2', 'value_third_trimester_4_2', 'value_fourth_trimester_4_2',
                                     'project_name_4_3', 'city_4_3', 'total_number_project_4_3', 'total_cost_4_3', 'start_date_4_3', 'end_date_4_3', 'value_first_trimester_4_3', 'value_second_trimester_4_3', 'value_third_trimester_4_3', 'value_fourth_trimester_4_3',
@@ -1106,21 +1106,21 @@ def JP_541(request):
                                 ])
             
             writer.writerow([   
-                                form_1, fiscal_year_1, company_name_1, liaison_officer_1, tel_1, project_1, branches_1,
+                                encuesta_1, trimestre_1, company_name_1, liaison_officer_1, tel_1, project_1, branches_1,
                                 project_name_1_1, city_1_1, total_number_project_1_1, total_cost_1_1, start_date_1_1, end_date_1_1, value_first_trimester_1_1, value_second_trimester_1_1, value_third_trimester_1_1, value_fourth_trimester_1_1,
                                 project_name_1_2, city_1_2, total_number_project_1_2, total_cost_1_2, start_date_1_2, end_date_1_2, value_first_trimester_1_2, value_second_trimester_1_2, value_third_trimester_1_2, value_fourth_trimester_1_2,
                                 project_name_1_3, city_1_3, total_number_project_1_3, total_cost_1_3, start_date_1_3, end_date_1_3, value_first_trimester_1_3, value_second_trimester_1_3, value_third_trimester_1_3, value_fourth_trimester_1_3,
                                 project_name_1_4, city_1_4, total_number_project_1_4, total_cost_1_4, start_date_1_4, end_date_1_4, value_first_trimester_1_4, value_second_trimester_1_4, value_third_trimester_1_4, value_fourth_trimester_1_4,
                                 project_name_1_5, city_1_5, total_number_project_1_5, total_cost_1_5, start_date_1_5, end_date_1_5, value_first_trimester_1_5, value_second_trimester_1_5, value_third_trimester_1_5, value_fourth_trimester_1_5,
                                 
-                                form_2, fiscal_year_2, company_name_2, liaison_officer_2, tel_2, project_2, branches_2,
+                                encuesta_2, trimestre_2, company_name_2, liaison_officer_2, tel_2, project_2, branches_2,
                                 project_name_2_1, city_2_1, total_number_project_2_1, total_cost_2_1, start_date_2_1, end_date_2_1, value_first_trimester_2_1, value_second_trimester_2_1, value_third_trimester_2_1, value_fourth_trimester_2_1,
                                 project_name_2_2, city_2_2, total_number_project_2_2, total_cost_2_2, start_date_2_2, end_date_2_2, value_first_trimester_2_2, value_second_trimester_2_2, value_third_trimester_2_2, value_fourth_trimester_2_2,
                                 project_name_2_3, city_2_3, total_number_project_2_3, total_cost_2_3, start_date_2_3, end_date_2_3, value_first_trimester_2_3, value_second_trimester_2_3, value_third_trimester_2_3, value_fourth_trimester_2_3,
                                 project_name_2_4, city_2_4, total_number_project_2_4, total_cost_2_4, start_date_2_4, end_date_2_4, value_first_trimester_2_4, value_second_trimester_2_4, value_third_trimester_2_4, value_fourth_trimester_2_4,
                                 project_name_2_5, city_2_5, total_number_project_2_5, total_cost_2_5, start_date_2_5, end_date_2_5, value_first_trimester_2_5, value_second_trimester_2_5, value_third_trimester_2_5, value_fourth_trimester_2_5,
                                 
-                                form_3, fiscal_year_3, company_name_3, liaison_officer_3, tel_3, project_3, branches_3,
+                                encuesta_3, trimestre_3, company_name_3, liaison_officer_3, tel_3, project_3, branches_3,
                                 project_name_3_1, city_3_1, total_number_project_3_1, total_cost_3_1, start_date_3_1, end_date_3_1, value_first_trimester_3_1, value_second_trimester_3_1, value_third_trimester_3_1, value_fourth_trimester_3_1,
                                 project_name_3_2, city_3_2, total_number_project_3_2, total_cost_3_2, start_date_3_2, end_date_3_2, value_first_trimester_3_2, value_second_trimester_3_2, value_third_trimester_3_2, value_fourth_trimester_3_2,
                                 project_name_3_3, city_3_3, total_number_project_3_3, total_cost_3_3, start_date_3_3, end_date_3_3, value_first_trimester_3_3, value_second_trimester_3_3, value_third_trimester_3_3, value_fourth_trimester_3_3,
@@ -1128,7 +1128,7 @@ def JP_541(request):
                                 project_name_3_5, city_3_5, total_number_project_3_5, total_cost_3_5, start_date_3_5, end_date_3_5, value_first_trimester_3_5, value_second_trimester_3_5, value_third_trimester_3_5, value_fourth_trimester_3_5,
                                 
                 
-                                form_4, fiscal_year_4, company_name_4, liaison_officer_4, tel_4, project_4, branches_4,
+                                encuesta_4, trimestre_4, company_name_4, liaison_officer_4, tel_4, project_4, branches_4,
                                 project_name_4_1, city_4_1, total_number_project_4_1, total_cost_4_1, start_date_4_1, end_date_4_1, value_first_trimester_4_1, value_second_trimester_4_1, value_third_trimester_4_1, value_fourth_trimester_4_1,
                                 project_name_4_2, city_4_2, total_number_project_4_2, total_cost_4_2, start_date_4_2, end_date_4_2, value_first_trimester_4_2, value_second_trimester_4_2, value_third_trimester_4_2, value_fourth_trimester_4_2,
                                 project_name_4_3, city_4_3, total_number_project_4_3, total_cost_4_3, start_date_4_3, end_date_4_3, value_first_trimester_4_3, value_second_trimester_4_3, value_third_trimester_4_3, value_fourth_trimester_4_3,
