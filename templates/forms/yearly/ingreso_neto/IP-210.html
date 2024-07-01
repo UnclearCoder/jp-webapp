@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" type="image/x-icon" href="{% static 'android-chrome-192x192.png' %}" />
     <link rel="apple-touch-icon" type="image/x-icon" href="{% static 'android-chrome-512x512.png' %}" />
 
-    <link rel="stylesheet" href="{% static 'IP_110.css' %}" />
+    <link rel="stylesheet" href="{% static 'forms/ingreso_neto/IP-110.css' %}" />
     <link rel="stylesheet" href="{% static 'website.css' %}" />
   </head>
 
@@ -159,13 +159,13 @@
           <div class="section_divider_2" id="label">
             Año - Year
             <br>
-            <div id="year">2012</div>
+            <input type="number" id="year" name="start_year" minlength="4" maxlength="4" placeholder="year" required></input>
           </div>
 
           <div class="section_divider_3" id="label">
             Año - Year
             <br>
-            <div id="year">2013</div>
+            <input type="number" id="year" name="end_year" minlength="4" maxlength="4" placeholder="year" required></input>
         </section>
 
         <section class="second_section">

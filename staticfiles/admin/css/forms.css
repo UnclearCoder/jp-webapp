@@ -546,3 +546,9 @@ a:hover {
 #center_links {
     text-align: center;
 }
+
+.form_types_title {
+    font-size: 50px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}

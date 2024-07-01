@@ -210,6 +210,9 @@ input {
 }
 
 #text-box-4 {
+    margin-left: 50px;
+}
+#text-box-4a {
     margin-left: 19px;
 }
 
@@ -364,8 +367,12 @@ hr {
 }
 
 #year {
-    margin-left: 20px;
-}
+    width: 40%;
+    height: fit-content;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+  }
 
 .divider-container {
     display: flex;
@@ -379,15 +386,17 @@ hr {
 }
 
 .section_divider_2 {
-    margin-left: 190px;
+    margin-left: 200px;
     margin-right: -100px;
     justify-content: space-around;
-}
-
-.section_divider_3 {
-    margin-right: 135px;
+    text-align: center;
+  }
+  
+  .section_divider_3 {
+    margin-right: 90px;
     justify-content: space-around;
-}
+    text-align: center;
+  }
 
 .submit-button-container {
     justify-content: center;
@@ -429,3 +438,4 @@ hr {
 #item_title_230 {
     width: 50%;
 }
+
