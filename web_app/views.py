@@ -2465,6 +2465,7 @@ def IP_420(request):
         cfc = request.POST.get('cfc')
         main_line = request.POST.get('main_line')
         business_type = request.POST.get('business_type')
+        other_business_type = request.POST.get('other_business_type')
         accounting_period = request.POST.get('accounting_period')
         
         sales_A_1 = request.POST.get('sales_A_1')
@@ -2569,7 +2570,7 @@ def IP_420(request):
             
             if not file_exists:
                 writer.writerow(['company_name','address','email','liaison_officer','ssn','tel','fax',
-                                'legal_form','cfc', 'main_line','business_type','accounting_period',
+                                'legal_form','cfc', 'main_line','business_type','other_business_type','accounting_period',
                                 'sales_A_1','sales_A_2','people_A_1','people_A_2','industries_businesses_A_1',
                                 'industries_businesses_A_2','less_cost_A_1','less_cost_A_2','inventory_beginning_1',
                                 'inventory_beginning_2','purchases_A_1','purchases_A_2','inventory_end_1',
@@ -2587,7 +2588,7 @@ def IP_420(request):
             
             writer.writerow([company_name, address, email, liaison_officer, 
                             ssn, tel, fax, legal_form, cfc, main_line, business_type,
-                            accounting_period, sales_A_1, sales_A_2, people_A_1,
+                            other_business_type,accounting_period, sales_A_1, sales_A_2, people_A_1,
                             people_A_2, industries_businesses_A_1, industries_businesses_A_2, less_cost_A_1,
                             less_cost_A_2, inventory_beginning_1, inventory_beginning_2, purchases_A_1,
                             purchases_A_2, inventory_end_1, inventory_end_2, gross_profit_A_1, gross_profit_A_2,

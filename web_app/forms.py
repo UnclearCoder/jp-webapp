@@ -1581,6 +1581,7 @@ class IP_420(forms.Form):
                 'Representative'), ('Mayorista', 'Wholesaler'), 
                    ('Supermercado', 'Supermarket')]
     )
+    other_business_type = forms.CharField(label='Otro (especifique) / Other (specify)', max_length=100)
     accounting_period = forms.CharField(label='6. Fecha de detallar la siguiente informacion / Your accounting period closing date:', max_length=100)
     
     sales_A_1 = forms.CharField(label='1. Ventas - Sales', max_length=100)
